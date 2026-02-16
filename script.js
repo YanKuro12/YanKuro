@@ -6,7 +6,7 @@ navToggle.addEventListener('click', () => {
 });
 
 // Typing effect with logos
-const typingText = document.getElementById("typing-text-with-logo");
+const typingText = document.getElementById("typing-text");
 const words = ["HTML", "CSS", "PHP", "C++", "C#", "Javascript", "Python", "SQL", "GO"];
 const logos = {
   "HTML": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
