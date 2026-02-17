@@ -257,3 +257,60 @@ footer {
   animation-delay: 0.6s;
 }
 .game-list li:nth-child(4) { animation-delay: 0.8s; }
+
+.project-card {
+  background: #1b1b1b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #C085FD;
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+  color: #C085FD;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: black;
+  background: #C085FD;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-card a:hover {
+  background: #A05EDC;
+  transform: scale(1.05);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list li {
+  background: #1b1b1b;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #C085FD;
+  transition: 0.3s;
+}
+
+.skill-list li:hover {
+  background: #C085FD;
+  color: black;
+  transform: scale(1.05);
+}
