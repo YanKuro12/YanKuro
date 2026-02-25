@@ -194,7 +194,8 @@ footer {
 }
 
 .nav-menu li a:hover {
-  color: #C085FD;
+background:linear-gradient(90deg,#7c3aed,#b78cfb); 
+color:#fff;
 }
 
 .nav-menu li a:hover::after {
