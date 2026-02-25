@@ -139,10 +139,11 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #0f051e, #140a28);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #C085FD50;
+  background: rgba(10, 5, 20, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #C085FD40;
   z-index: 1000;
+  transition: 0.3s ease;
 }
 
 .nav-container {
@@ -178,16 +179,22 @@ footer {
   width: 100%;
 }
 
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-menu li a {
-  color: #ddd;
-  font-weight: 500;
+  color: #ccc;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .nav-menu li a:hover {
   color: #C085FD;
-  text-shadow: 0 0 8px #C085FD;
 }
 
 .nav-menu li a:hover::after {
@@ -204,20 +211,26 @@ footer {
 @media (max-width: 700px) {
   .nav-menu {
     position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #1a0e2a;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    width: 90%;
+    background: #140a28;
+    border: 1px solid #C085FD40;
+    border-radius: 15px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
-    transform: translateY(-150%);
-    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
   }
 
   .nav-menu.active {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .nav-toggle {
